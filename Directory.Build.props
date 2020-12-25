@@ -1,0 +1,14 @@
+<Project>
+  <PropertyGroup>
+    <BaseDir>$(MSBuildThisFileDirectory)</BaseDir>
+    <BaseBuildDir>$(BaseDir)build\</BaseBuildDir>
+    <BaseIntermediateOutputPath>$(BaseBuildDir)obj\$(MSBuildProjectName)</BaseIntermediateOutputPath>
+    <OutputPath>$(BaseBuildDir)$(Configuration)</OutputPath>
+    <LangVersion>9.0</LangVersion>
+    <NoWarn>1701;1702;1591</NoWarn>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <ProduceReferenceAssembly>false</ProduceReferenceAssembly>
+    <SatelliteResourceLanguages>en</SatelliteResourceLanguages>
+  </PropertyGroup>
+</Project>

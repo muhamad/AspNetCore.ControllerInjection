@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <Authors>Muhammad Aladdin</Authors>
+    <Company>NoRealm</Company>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/muhamad/AspNetCore.ControllerInjection</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/muhamad/AspNetCore.ControllerInjection</RepositoryUrl>
+    <Description>The default service provider from Microsoft support only Constructor Injection which is great and fast, However in large application it become hard to design the class hierarchy because of this limitation of the service provider. So this package attempt to solve this problem by providing a controller activator which extend the service provider - in the matter of speaking - for MVC controllers to support field, property and method injection in a simple way.</Description>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageTags>aspnetcore di ioc dependencyinjection</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="*" />
+
+  </ItemGroup>
+
+</Project>
