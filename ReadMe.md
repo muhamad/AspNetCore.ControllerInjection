@@ -1,7 +1,9 @@
+[![Release](https://img.shields.io/github/v/release/muhamad/AspNetCore.ControllerInjection?style=flat-square)](https://github.com/muhamad/AspNetCore.ControllerInjection/releases/latest)
+[![Nuget](https://img.shields.io/nuget/v/AspNetCore.ControllerInjection?style=flat-square)](https://www.nuget.org/packages/AspNetCore.ControllerInjection/)
+
 ## AspNetCore.ControllerInjection
 
 The default service provider from Microsoft support only Constructor Injection which is great and fast, However in large application it become hard to design the class hierarchy because of this limitation of the service provider. So this package attempt to solve this problem by providing a controller activator which extend the service provider - in the matter of speaking - for MVC controllers to support field, property and method injection in a simple way.
-
 
 ### How to
 
@@ -14,7 +16,6 @@ services.AddSingelton<IControllerMetadataProvider, DefaultControllerMetadataProv
 The first line sets the new controller activator which create/release the controller.
 
 The second line register the provider which cache the controller metadata required to do the injection later.
-
 
 ### The attributes
 
@@ -30,7 +31,6 @@ The `InjectOrder` attribute used to specify the order in which the injection wil
 1. `Order` the order of injection for the element it tagged.
 
 If the `InjectOrder` didn't specified in the element the default order will be `int.MaxValue` and is there are multiple elements with same order, the injection order is not specified.
-
 
 #### Before we go on
 
@@ -75,7 +75,6 @@ private Foo _foo;
 #### Properties
 
 all roles for Fields apply here
-
 
 #### Methods
 
